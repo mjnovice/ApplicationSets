@@ -1,0 +1,1 @@
+kubeadm join 10.0.1.40:6443 --token 4ijdpb.ucphmt6brimo85nn     --discovery-token-ca-cert-hash sha256:001aa6d482bd61bff3067642d00fbd1bbd4f02e30cadd0bd4ffc6ef05888bcb0
