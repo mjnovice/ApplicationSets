@@ -1,0 +1,20 @@
+whisk:
+  ingress:
+    type: NodePort
+    apiHostName: 10.0.1.240
+    apiHostPort: 31001
+
+nginx:
+  httpsNodePort: 31001
+
+invoker:
+  containerFactory:
+    dind: true
+
+apigw:
+  imageName: "10.0.1.240:5000/customwhisk/apigw"
+  imageTag: "v1"
+
+k8s:
+  persistence:
+    enabled: false

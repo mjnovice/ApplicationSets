@@ -24,3 +24,6 @@
         - kubelet
         - kubernetes-cni
 
+
+    - name: Remove iptables
+      shell: iptables -F && iptables -t nat -F && iptables -t mangle -F && iptables -X 
